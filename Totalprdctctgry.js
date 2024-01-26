@@ -26,7 +26,7 @@ const Totalprdctctgry = () => {
   }, []);
 
   const tableStyle = {
-    width: '50%', // Adjust the width as needed
+    width: '50%', 
     borderCollapse: 'collapse',
     fontFamily: 'Arial, sans-serif',
     backgroundColor: '#f4f4f4',
@@ -60,7 +60,6 @@ const Totalprdctctgry = () => {
             <tr>
               <th style={headerCellStyle}>Name</th>
               <th style={headerCellStyle}>Price</th>
-              {/* Add more headers as needed */}
             </tr>
           </thead>
           <tbody>
@@ -68,7 +67,6 @@ const Totalprdctctgry = () => {
               <tr key={product._id}>
                 <td style={cellStyle}>{product.name}</td>
                 <td style={cellStyle}>{product.price}</td>
-                {/* Add more cells as needed */}
               </tr>
             ))}
           </tbody>
@@ -81,14 +79,12 @@ const Totalprdctctgry = () => {
           <thead>
             <tr>
               <th style={headerCellStyle}>Name</th>
-              {/* Add more headers as needed */}
             </tr>
           </thead>
           <tbody>
             {categories.map(category => (
               <tr key={category._id}>
                 <td style={cellStyle}>{category.name}</td>
-                {/* Add more cells as needed */}
               </tr>
             ))}
           </tbody>
