@@ -1,4 +1,4 @@
-// UserProfile.js
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -28,7 +28,7 @@ const UserProfile = ({ userEmail }) => {
           <p>
             <strong>Email:</strong> {userProfile.email}
           </p>
-          {/* Add other profile details as needed */}
+         
         </div>
       ) : (
         <p>Loading...</p>
