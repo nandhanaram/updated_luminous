@@ -29,7 +29,7 @@ const Users = () => {
 
   return (
     <div className="admin-dashboard" style={{ fontFamily: 'Arial, sans-serif' }}>
-      <h2 style={{ color: '#333' }}>Admin Dashboard - User Details</h2>
+      <h2 style={{ color: '#333' }}>User Details</h2>
       <p>Total number of users: {users.length}</p>
 
       <table className="user-table" style={tableStyle}>
@@ -37,7 +37,6 @@ const Users = () => {
           <tr>
             <th style={thTdStyle}>Name</th>
             <th style={thTdStyle}>Email</th>
-            {/* Add more user details headers as needed */}
           </tr>
         </thead>
         <tbody>
@@ -45,7 +44,6 @@ const Users = () => {
             <tr key={user._id}>
               <td style={thTdStyle}>{user.username}</td>
               <td style={thTdStyle}>{user.email}</td>
-              {/* Display more user details as needed */}
             </tr>
           ))}
         </tbody>
